@@ -9,7 +9,7 @@ import 'package:sneakers_show/features/init/orchestrator.dart';
 import 'package:sneakers_show/localization/i_locale_repo.dart';
 import 'package:sneakers_show/widgets/app_log.dart';
 import 'package:sneakers_show/widgets/navigation/app_router.dart';
-import 'package:sneakers_show/widgets/sc_unfocuser.dart';
+import 'package:sneakers_show/widgets/unfocuser.dart';
 import 'package:sneakers_show/widgets/theme/impl/default_theme.dart';
 import 'package:sneakers_show/widgets/theme/repo/i_theme_repo.dart';
 import 'localization/generated/l10n.dart';
