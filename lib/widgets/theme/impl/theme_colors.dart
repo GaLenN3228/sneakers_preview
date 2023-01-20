@@ -17,7 +17,7 @@ class ThemeColors implements IColors {
     this.grey300 = const Color(0xFFD8DADD),
     this.grey100 = const Color(0xFFF4F4F5),
     this.link = const Color(0xFF3E66CE),
-    this.primary = const Color(0xFFFF8C1C),
+    this.primary = const Color(0xFFc43050),
     this.blackShadow = const Color(0xff000000),
     this.primaryBg = const Color.fromRGBO(255, 140, 28, 0.12),
     this.outlinedBorder = const Color(0xFF1877F2),

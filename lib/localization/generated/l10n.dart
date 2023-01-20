@@ -49,6 +49,156 @@ class S {
   static S? maybeOf(BuildContext context) {
     return Localizations.of<S>(context, S);
   }
+
+  /// `Discover`
+  String get discover {
+    return Intl.message(
+      'Discover',
+      name: 'discover',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `New`
+  String get newSection {
+    return Intl.message(
+      'New',
+      name: 'newSection',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Featured`
+  String get featured {
+    return Intl.message(
+      'Featured',
+      name: 'featured',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Upcoming`
+  String get upcoming {
+    return Intl.message(
+      'Upcoming',
+      name: 'upcoming',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `More`
+  String get more {
+    return Intl.message(
+      'More',
+      name: 'more',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Nike`
+  String get nike {
+    return Intl.message(
+      'Nike',
+      name: 'nike',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Addidas`
+  String get addidas {
+    return Intl.message(
+      'Addidas',
+      name: 'addidas',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Jordan`
+  String get jordan {
+    return Intl.message(
+      'Jordan',
+      name: 'jordan',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Puma`
+  String get puma {
+    return Intl.message(
+      'Puma',
+      name: 'puma',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reebok`
+  String get reebok {
+    return Intl.message(
+      'Reebok',
+      name: 'reebok',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home`
+  String get home {
+    return Intl.message(
+      'Home',
+      name: 'home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Favorites`
+  String get favorites {
+    return Intl.message(
+      'Favorites',
+      name: 'favorites',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home with pin`
+  String get homeWithPin {
+    return Intl.message(
+      'Home with pin',
+      name: 'homeWithPin',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cart`
+  String get cart {
+    return Intl.message(
+      'Cart',
+      name: 'cart',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cabinet`
+  String get cabinet {
+    return Intl.message(
+      'Cabinet',
+      name: 'cabinet',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

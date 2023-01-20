@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:sneakers_show/features/splash/bloc/bloc.dart';
 
 class BlocsProvider extends StatelessWidget {
   const BlocsProvider({super.key, required this.child});
@@ -9,7 +10,11 @@ class BlocsProvider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: const [],
+      providers: [
+        BlocProvider(
+          create: (context) => SplashBloc(),
+        ),
+      ],
       child: child,
     );
   }

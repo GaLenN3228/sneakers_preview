@@ -1,1 +1,17 @@
-{}
+{
+    "discover":"Discover",
+    "newSection":"New",
+    "featured":"Featured",
+    "upcoming":"Upcoming",
+    "more":"More",
+    "nike":"Nike",
+    "addidas":"Addidas",
+    "jordan":"Jordan",
+    "puma":"Puma",
+    "reebok":"Reebok",
+    "home":"Home",
+    "favorites":"Favorites",
+    "homeWithPin":"Home with pin",
+    "cart":"Cart",
+    "cabinet":"Cabinet"
+}

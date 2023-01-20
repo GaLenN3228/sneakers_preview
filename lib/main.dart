@@ -18,6 +18,7 @@ import 'widgets/theme/interfaces/app_theme.dart';
 final scaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
 
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   runZonedGuarded(
     () {
       final defaultTheme = DefaultTheme();

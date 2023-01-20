@@ -19,6 +19,8 @@ dependencies:
   auto_route: ^5.0.4
   provider: ^6.0.5
   collection: ^1.16.0
+  #only for icons
+  flutter_svg: ^1.1.6
 
 dev_dependencies:
   flutter_test:
@@ -39,11 +41,11 @@ flutter:
   fonts:
     - family: Relish Pro
       fonts:
-        - asset: assets/fonts/montserrat/Relish-Pro-Regular.ttf
+        - asset: assets/fonts/Relish-Pro-Regular.ttf
           weight: 400
-        - asset: assets/fonts/montserrat/Relish-Pro-Medium.ttf
+        - asset: assets/fonts/Relish-Pro-Medium.ttf
           weight: 500
-        - asset: assets/fonts/montserrat/Relish-Pro-Bold.ttf
+        - asset: assets/fonts/Relish-Pro-Bold.ttf
           weight: 700
 
 flutter_intl:

@@ -14,4 +14,11 @@ class _Images {
 
 class _Svg {
   const _Svg();
+
+  final String cabinet = 'assets/svg/cabinet.svg';
+  final String cart = 'assets/svg/cart.svg';
+  final String favorite = 'assets/svg/favorite.svg';
+  final String homePin = 'assets/svg/home_pin.svg';
+  final String home = 'assets/svg/home.svg';
+  final String address = 'assets/svg/address.svg';
 }
