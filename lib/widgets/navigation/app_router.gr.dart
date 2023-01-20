@@ -23,6 +23,16 @@ class _$AppRouter extends RootStackRouter {
         child: const SplashScreen(),
       );
     },
+    ScreenSneakersDetailedRoute.name: (routeData) {
+      final args = routeData.argsAs<ScreenSneakersDetailedRouteArgs>();
+      return AdaptivePage<dynamic>(
+        routeData: routeData,
+        child: ScreenSneakersDetailed(
+          key: args.key,
+          sneakers: args.sneakers,
+        ),
+      );
+    },
     PrimaryScreenRoute.name: (routeData) {
       return CustomPage<dynamic>(
         routeData: routeData,
@@ -100,6 +110,10 @@ class _$AppRouter extends RootStackRouter {
         RouteConfig(
           SplashScreenRoute.name,
           path: '/',
+        ),
+        RouteConfig(
+          ScreenSneakersDetailedRoute.name,
+          path: '/screen-sneakers-detailed',
         ),
         RouteConfig(
           PrimaryScreenRoute.name,
@@ -180,6 +194,40 @@ class SplashScreenRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'SplashScreenRoute';
+}
+
+/// generated route for
+/// [ScreenSneakersDetailed]
+class ScreenSneakersDetailedRoute extends PageRouteInfo<ScreenSneakersDetailedRouteArgs> {
+  ScreenSneakersDetailedRoute({
+    Key? key,
+    required Sneakers sneakers,
+  }) : super(
+          ScreenSneakersDetailedRoute.name,
+          path: '/screen-sneakers-detailed',
+          args: ScreenSneakersDetailedRouteArgs(
+            key: key,
+            sneakers: sneakers,
+          ),
+        );
+
+  static const String name = 'ScreenSneakersDetailedRoute';
+}
+
+class ScreenSneakersDetailedRouteArgs {
+  const ScreenSneakersDetailedRouteArgs({
+    this.key,
+    required this.sneakers,
+  });
+
+  final Key? key;
+
+  final Sneakers sneakers;
+
+  @override
+  String toString() {
+    return 'ScreenSneakersDetailedRouteArgs{key: $key, sneakers: $sneakers}';
+  }
 }
 
 /// generated route for

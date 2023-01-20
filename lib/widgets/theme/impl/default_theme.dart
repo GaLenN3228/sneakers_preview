@@ -10,7 +10,7 @@ class DefaultTheme implements AppTheme {
   @override
   late final data = ThemeData(
     brightness: Brightness.light,
-    fontFamily: 'Montserrat',
+    fontFamily: 'JosefinSans',
     useMaterial3: false,
     primaryColor: _color.primary,
     colorScheme: ColorScheme.fromSeed(

@@ -36,6 +36,7 @@ class ItemCard extends StatelessWidget {
             right: 0,
             child: SvgPicture.asset(
               AppAssets.svg.favorite,
+              width: 24,
             ),
           ),
           Positioned(
@@ -73,7 +74,7 @@ class ItemCard extends StatelessWidget {
                   ),
                   const SizedBox(height: 5),
                   Text(
-                    sneakers.price ?? '\$170.00',
+                    sneakers.price ?? S.of(context).noData,
                     style: context.text.s16w600.copyWith(
                       fontSize: 8,
                       fontWeight: FontWeight.w500,

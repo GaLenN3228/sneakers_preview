@@ -25,4 +25,5 @@ class _Svg {
   final String bell = 'assets/svg/bell.svg';
   final String search = 'assets/svg/search.svg';
   final String arrowRight = 'assets/svg/arrow_right.svg';
+  final String leg = 'assets/svg/leg.svg';
 }

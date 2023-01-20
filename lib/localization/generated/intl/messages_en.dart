@@ -22,9 +22,12 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "addToBag": MessageLookupByLibrary.simpleMessage("Add to bag"),
         "addidas": MessageLookupByLibrary.simpleMessage("Addidas"),
         "cabinet": MessageLookupByLibrary.simpleMessage("Cabinet"),
         "cart": MessageLookupByLibrary.simpleMessage("Cart"),
+        "detailedBody": MessageLookupByLibrary.simpleMessage(
+            "This Nike Air Max 270 amps us an icon with a huge Max Air unit for cushioning under every step. It features a stretchy inner sleeve for a snug, sock-like fit."),
         "discover": MessageLookupByLibrary.simpleMessage("Discover"),
         "favorites": MessageLookupByLibrary.simpleMessage("Favorites"),
         "featured": MessageLookupByLibrary.simpleMessage("Featured"),
@@ -32,12 +35,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "homeWithPin": MessageLookupByLibrary.simpleMessage("Home with pin"),
         "jordan": MessageLookupByLibrary.simpleMessage("Jordan"),
         "more": MessageLookupByLibrary.simpleMessage("More"),
+        "moreDetails": MessageLookupByLibrary.simpleMessage("More details"),
         "newSection": MessageLookupByLibrary.simpleMessage("New"),
         "nike": MessageLookupByLibrary.simpleMessage("Nike"),
         "nikeAirMax": MessageLookupByLibrary.simpleMessage("NIKE AIR-MAX"),
         "noData": MessageLookupByLibrary.simpleMessage("No data"),
         "puma": MessageLookupByLibrary.simpleMessage("Puma"),
         "reebok": MessageLookupByLibrary.simpleMessage("Reebok"),
-        "upcoming": MessageLookupByLibrary.simpleMessage("Upcoming")
+        "size": MessageLookupByLibrary.simpleMessage("Size"),
+        "tryIt": MessageLookupByLibrary.simpleMessage("Try it"),
+        "uk": MessageLookupByLibrary.simpleMessage("UK"),
+        "upcoming": MessageLookupByLibrary.simpleMessage("Upcoming"),
+        "usa": MessageLookupByLibrary.simpleMessage("USA")
       };
 }

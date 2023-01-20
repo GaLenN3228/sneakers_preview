@@ -15,6 +15,13 @@
     "cart":"Cart",
     "cabinet":"Cabinet",
     "nikeAirMax":"NIKE AIR-MAX",
-    "noData":"No data"
+    "noData":"No data",
+    "detailedBody":"This Nike Air Max 270 amps us an icon with a huge Max Air unit for cushioning under every step. It features a stretchy inner sleeve for a snug, sock-like fit.",
+    "moreDetails":"More details",
+    "size":"Size",
+    "uk":"UK",
+    "usa":"USA",
+    "tryIt":"Try it",
+    "addToBag":"Add to bag"
 
 }

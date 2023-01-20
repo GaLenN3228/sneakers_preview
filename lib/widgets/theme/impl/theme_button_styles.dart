@@ -10,13 +10,11 @@ class ThemeButtonStyles implements IButtonStyles {
   @override
   late final ButtonStyle elevated1 = ElevatedButton.styleFrom(
     textStyle: _style.h16w700,
-    foregroundColor: _color.background,
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(12.0),
     ),
     backgroundColor: _color.primary,
     elevation: 0.0,
-    shadowColor: _color.buttonShadow1,
     padding: const EdgeInsets.symmetric(
       vertical: 18.0,
       horizontal: 32.0,

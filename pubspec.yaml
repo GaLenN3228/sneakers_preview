@@ -39,13 +39,15 @@ flutter:
     - assets/images/
     - assets/svg/
   fonts:
-    - family: Relish Pro
+    - family: JosefinSans
       fonts:
-        - asset: assets/fonts/Relish-Pro-Regular.ttf
+        - asset: assets/fonts/JosefinSans-Regular.ttf
           weight: 400
-        - asset: assets/fonts/Relish-Pro-Medium.ttf
+        - asset: assets/fonts/JosefinSans-Medium.ttf
           weight: 500
-        - asset: assets/fonts/Relish-Pro-Bold.ttf
+        - asset: assets/fonts/JosefinSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/JosefinSans-Bold.ttf
           weight: 700
 
 flutter_intl:

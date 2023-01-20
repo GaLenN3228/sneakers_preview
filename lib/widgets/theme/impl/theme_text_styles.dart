@@ -10,7 +10,7 @@ class ThemeTextStyles implements ITextStyles {
   late final b16w600 = TextStyle(
     fontSize: 16,
     color: _colors.dark,
-    fontFamily: 'Relish Pro',
+    fontFamily: 'JosefinSans',
     fontWeight: FontWeight.w600,
   );
 
@@ -18,14 +18,14 @@ class ThemeTextStyles implements ITextStyles {
   late final TextStyle error = TextStyle(
     fontSize: 14,
     color: _colors.error,
-    fontFamily: 'Relish Pro',
+    fontFamily: 'JosefinSans',
   );
 
   @override
   late final h16w700 = TextStyle(
     fontSize: 16,
     color: _colors.dark,
-    fontFamily: 'Relish Pro',
+    fontFamily: 'JosefinSans',
     fontWeight: FontWeight.w700,
   );
 
@@ -33,7 +33,7 @@ class ThemeTextStyles implements ITextStyles {
   late final h20w700 = TextStyle(
     fontSize: 20,
     color: _colors.dark,
-    fontFamily: 'Relish Pro',
+    fontFamily: 'JosefinSans',
     fontWeight: FontWeight.w700,
   );
 
@@ -41,7 +41,7 @@ class ThemeTextStyles implements ITextStyles {
   late final h24w700 = TextStyle(
     fontSize: 24,
     color: _colors.dark,
-    fontFamily: 'Relish Pro',
+    fontFamily: 'JosefinSans',
     fontWeight: FontWeight.w700,
   );
 
@@ -50,7 +50,7 @@ class ThemeTextStyles implements ITextStyles {
     fontSize: 10,
     color: _colors.dark,
     fontWeight: FontWeight.w500,
-    fontFamily: 'Relish Pro',
+    fontFamily: 'JosefinSans',
   );
 
   @override
@@ -58,7 +58,7 @@ class ThemeTextStyles implements ITextStyles {
     fontSize: 12,
     color: _colors.dark,
     fontWeight: FontWeight.w500,
-    fontFamily: 'Relish Pro',
+    fontFamily: 'JosefinSans',
   );
 
   @override
@@ -66,7 +66,7 @@ class ThemeTextStyles implements ITextStyles {
     fontSize: 12,
     color: _colors.dark,
     fontWeight: FontWeight.w700,
-    fontFamily: 'Relish Pro',
+    fontFamily: 'JosefinSans',
   );
 
   @override
@@ -74,7 +74,7 @@ class ThemeTextStyles implements ITextStyles {
     fontSize: 14,
     color: _colors.dark,
     fontWeight: FontWeight.w500,
-    fontFamily: 'Relish Pro',
+    fontFamily: 'JosefinSans',
   );
 
   @override
@@ -82,14 +82,14 @@ class ThemeTextStyles implements ITextStyles {
     fontSize: 14,
     color: _colors.dark,
     fontWeight: FontWeight.w700,
-    fontFamily: 'Relish Pro',
+    fontFamily: 'JosefinSans',
   );
 
   @override
   late final s16w500 = TextStyle(
     fontSize: 16,
     color: _colors.dark,
-    fontFamily: 'Relish Pro',
+    fontFamily: 'JosefinSans',
     fontWeight: FontWeight.w500,
   );
 
@@ -97,7 +97,7 @@ class ThemeTextStyles implements ITextStyles {
   late final s16w600 = TextStyle(
     fontSize: 16,
     color: _colors.dark,
-    fontFamily: 'Relish Pro',
+    fontFamily: 'JosefinSans',
     fontWeight: FontWeight.w600,
   );
 
@@ -106,7 +106,7 @@ class ThemeTextStyles implements ITextStyles {
     fontSize: 16,
     color: _colors.dark,
     fontWeight: FontWeight.w700,
-    fontFamily: 'Relish Pro',
+    fontFamily: 'JosefinSans',
   );
 
   @override
@@ -114,14 +114,14 @@ class ThemeTextStyles implements ITextStyles {
     fontSize: 20,
     color: _colors.dark,
     fontWeight: FontWeight.w700,
-    fontFamily: 'Relish Pro',
+    fontFamily: 'JosefinSans',
   );
 
   @override
   late final s24w700 = TextStyle(
     fontSize: 24,
     color: _colors.dark,
-    fontFamily: 'Relish Pro',
+    fontFamily: 'JosefinSans',
     fontWeight: FontWeight.w700,
   );
 
@@ -129,7 +129,7 @@ class ThemeTextStyles implements ITextStyles {
   late final s36w400 = TextStyle(
     fontSize: 36,
     color: _colors.dark,
-    fontFamily: 'Relish Pro',
+    fontFamily: 'JosefinSans',
     fontWeight: FontWeight.w400,
   );
 

@@ -219,6 +219,76 @@ class S {
       args: [],
     );
   }
+
+  /// `This Nike Air Max 270 amps us an icon with a huge Max Air unit for cushioning under every step. It features a stretchy inner sleeve for a snug, sock-like fit.`
+  String get detailedBody {
+    return Intl.message(
+      'This Nike Air Max 270 amps us an icon with a huge Max Air unit for cushioning under every step. It features a stretchy inner sleeve for a snug, sock-like fit.',
+      name: 'detailedBody',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `More details`
+  String get moreDetails {
+    return Intl.message(
+      'More details',
+      name: 'moreDetails',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Size`
+  String get size {
+    return Intl.message(
+      'Size',
+      name: 'size',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `UK`
+  String get uk {
+    return Intl.message(
+      'UK',
+      name: 'uk',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `USA`
+  String get usa {
+    return Intl.message(
+      'USA',
+      name: 'usa',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Try it`
+  String get tryIt {
+    return Intl.message(
+      'Try it',
+      name: 'tryIt',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add to bag`
+  String get addToBag {
+    return Intl.message(
+      'Add to bag',
+      name: 'addToBag',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

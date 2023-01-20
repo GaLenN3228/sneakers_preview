@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:sneakers_show/features/cabinet/cabinet_screen.dart';
 import 'package:sneakers_show/features/cart/cart_screen.dart';
 import 'package:sneakers_show/features/favorites/favorites_screen.dart';
+import 'package:sneakers_show/features/home/detailed/screen_sneakers_detailed.dart';
 import 'package:sneakers_show/features/home/home_screen.dart';
+import 'package:sneakers_show/features/home/models/sneakerd.dart';
 import 'package:sneakers_show/features/pick_up/pick_screen.dart';
 import 'package:sneakers_show/features/primary/primary_screen.dart';
 import 'package:sneakers_show/features/splash/splash_screen.dart';
@@ -16,6 +18,7 @@ part 'app_router.gr.dart';
 @AdaptiveAutoRouter(
   routes: <AutoRoute>[
     AutoRoute(page: SplashScreen, initial: true),
+    AutoRoute(page: ScreenSneakersDetailed),
     CustomRoute(
       page: PrimaryScreen,
       initial: true,
