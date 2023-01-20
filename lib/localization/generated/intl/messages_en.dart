@@ -34,6 +34,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "more": MessageLookupByLibrary.simpleMessage("More"),
         "newSection": MessageLookupByLibrary.simpleMessage("New"),
         "nike": MessageLookupByLibrary.simpleMessage("Nike"),
+        "nikeAirMax": MessageLookupByLibrary.simpleMessage("NIKE AIR-MAX"),
+        "noData": MessageLookupByLibrary.simpleMessage("No data"),
         "puma": MessageLookupByLibrary.simpleMessage("Puma"),
         "reebok": MessageLookupByLibrary.simpleMessage("Reebok"),
         "upcoming": MessageLookupByLibrary.simpleMessage("Upcoming")

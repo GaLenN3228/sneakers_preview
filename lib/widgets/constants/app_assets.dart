@@ -21,4 +21,8 @@ class _Svg {
   final String homePin = 'assets/svg/home_pin.svg';
   final String home = 'assets/svg/home.svg';
   final String address = 'assets/svg/address.svg';
+  final String arrowBack = 'assets/svg/arrow_back.svg';
+  final String bell = 'assets/svg/bell.svg';
+  final String search = 'assets/svg/search.svg';
+  final String arrowRight = 'assets/svg/arrow_right.svg';
 }

@@ -18,7 +18,7 @@ class NavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      elevation: 8,
+      elevation: 0,
       showSelectedLabels: false,
       showUnselectedLabels: false,
       backgroundColor: context.color.background,
