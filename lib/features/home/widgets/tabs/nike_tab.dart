@@ -81,6 +81,7 @@ class NikeTab extends StatelessWidget {
 
 final sneakers = <Sneakers>[
   Sneakers(
+    id: 1,
     name: S.current.nikeAirMax,
     price: '\$170.00',
     image: AppAssets.images.sneakers2,
@@ -88,6 +89,7 @@ final sneakers = <Sneakers>[
     color: Colors.pink,
   ),
   Sneakers(
+    id: 2,
     name: S.current.nikeAirMax,
     price: '\$130.00',
     image: AppAssets.images.sneakers1,
@@ -95,6 +97,7 @@ final sneakers = <Sneakers>[
     color: Colors.blue,
   ),
   Sneakers(
+    id: 3,
     name: S.current.nikeAirMax,
     price: '\$170.00',
     image: AppAssets.images.sneakers3,
@@ -102,6 +105,7 @@ final sneakers = <Sneakers>[
     color: Colors.pink,
   ),
   Sneakers(
+    id: 4,
     name: S.current.nikeAirMax,
     price: '\$130.00',
     image: AppAssets.images.sneakers4,

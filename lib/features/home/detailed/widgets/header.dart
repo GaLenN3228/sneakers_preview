@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:sneakers_show/features/home/detailed/screen_sneakers_detailed.dart';
+import 'package:sneakers_show/features/home/detailed/widgets/shaper.dart';
 import 'package:sneakers_show/features/home/models/sneakerd.dart';
 import 'package:sneakers_show/localization/generated/l10n.dart';
 import 'package:sneakers_show/widgets/constants/app_assets.dart';

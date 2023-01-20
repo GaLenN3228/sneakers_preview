@@ -289,6 +289,36 @@ class S {
       args: [],
     );
   }
+
+  /// `My Bag`
+  String get myBag {
+    return Intl.message(
+      'My Bag',
+      name: 'myBag',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total {count} items`
+  String totalItems(Object count) {
+    return Intl.message(
+      'Total $count items',
+      name: 'totalItems',
+      desc: '',
+      args: [count],
+    );
+  }
+
+  /// `Cart is empty`
+  String get cartEmpty {
+    return Intl.message(
+      'Cart is empty',
+      name: 'cartEmpty',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

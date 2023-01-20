@@ -7,8 +7,10 @@ class Sneakers {
     this.price,
     this.brand,
     this.color,
+    required this.id,
   });
 
+  final int id;
   final String? image;
   final String? name;
   final String? price;

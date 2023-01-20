@@ -20,12 +20,15 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
+  static String m0(count) => "Total ${count} items";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "addToBag": MessageLookupByLibrary.simpleMessage("Add to bag"),
         "addidas": MessageLookupByLibrary.simpleMessage("Addidas"),
         "cabinet": MessageLookupByLibrary.simpleMessage("Cabinet"),
         "cart": MessageLookupByLibrary.simpleMessage("Cart"),
+        "cartEmpty": MessageLookupByLibrary.simpleMessage("Cart is empty"),
         "detailedBody": MessageLookupByLibrary.simpleMessage(
             "This Nike Air Max 270 amps us an icon with a huge Max Air unit for cushioning under every step. It features a stretchy inner sleeve for a snug, sock-like fit."),
         "discover": MessageLookupByLibrary.simpleMessage("Discover"),
@@ -36,6 +39,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "jordan": MessageLookupByLibrary.simpleMessage("Jordan"),
         "more": MessageLookupByLibrary.simpleMessage("More"),
         "moreDetails": MessageLookupByLibrary.simpleMessage("More details"),
+        "myBag": MessageLookupByLibrary.simpleMessage("My Bag"),
         "newSection": MessageLookupByLibrary.simpleMessage("New"),
         "nike": MessageLookupByLibrary.simpleMessage("Nike"),
         "nikeAirMax": MessageLookupByLibrary.simpleMessage("NIKE AIR-MAX"),
@@ -43,6 +47,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "puma": MessageLookupByLibrary.simpleMessage("Puma"),
         "reebok": MessageLookupByLibrary.simpleMessage("Reebok"),
         "size": MessageLookupByLibrary.simpleMessage("Size"),
+        "totalItems": m0,
         "tryIt": MessageLookupByLibrary.simpleMessage("Try it"),
         "uk": MessageLookupByLibrary.simpleMessage("UK"),
         "upcoming": MessageLookupByLibrary.simpleMessage("Upcoming"),

@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:sneakers_show/features/cart/bloc/bloc.dart';
+import 'package:sneakers_show/features/cart/models/cart_item.dart';
 import 'package:sneakers_show/features/home/detailed/widgets/header.dart';
+import 'package:sneakers_show/features/home/detailed/widgets/size_selector.dart';
 import 'package:sneakers_show/features/home/models/sneakerd.dart';
 import 'package:sneakers_show/localization/generated/l10n.dart';
 import 'package:sneakers_show/widgets/app_divider.dart';
 import 'package:sneakers_show/widgets/constants/app_assets.dart';
-import 'package:sneakers_show/widgets/tappable.dart';
 import 'package:sneakers_show/widgets/theme/interfaces/app_theme.dart';
 
 class ScreenSneakersDetailed extends StatelessWidget {
@@ -107,66 +109,7 @@ class ScreenSneakersDetailed extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 20),
-                SingleChildScrollView(
-                  child: Row(
-                    children: [
-                      Tappable(
-                        onTap: () {},
-                        child: Container(
-                          width: 70,
-                          padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 6),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(4.0),
-                            color: context.color.background,
-                            boxShadow: [
-                              BoxShadow(
-                                color: context.color.grey900.withOpacity(0.2),
-                                spreadRadius: 1,
-                                blurRadius: 7,
-                                offset: const Offset(0, 1),
-                              ),
-                            ],
-                          ),
-                          child: Row(
-                            children: [
-                              Text(
-                                S.of(context).tryIt,
-                              ),
-                              const SizedBox(width: 5),
-                              SvgPicture.asset(
-                                AppAssets.svg.leg,
-                                width: 13,
-                              )
-                            ],
-                          ),
-                        ),
-                      ),
-                      ..._sizes.map(
-                        (e) => Tappable(
-                          onTap: () {},
-                          child: Container(
-                            margin: const EdgeInsets.only(left: 16),
-                            width: 70,
-                            padding: const EdgeInsets.symmetric(vertical: 8),
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(4.0),
-                              color: context.color.background,
-                              boxShadow: [
-                                BoxShadow(
-                                  color: context.color.grey900.withOpacity(0.2),
-                                  spreadRadius: 1,
-                                  blurRadius: 7,
-                                  offset: const Offset(0, 1),
-                                ),
-                              ],
-                            ),
-                            child: Center(child: Text(e)),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+                const SizeSelector(),
                 const SizedBox(height: 20),
                 Row(
                   children: [
@@ -179,7 +122,19 @@ class ScreenSneakersDetailed extends StatelessWidget {
                             color: context.color.background,
                           ),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          BlocProvider.of<CartBloc>(context).add(
+                            AddToCardEvent(
+                              item: CartItem(
+                                id: sneakers.id,
+                                name: sneakers.name,
+                                price: sneakers.price,
+                                image: sneakers.image,
+                                count: 1,
+                              ),
+                            ),
+                          );
+                        },
                       ),
                     ),
                   ],
@@ -193,39 +148,21 @@ class ScreenSneakersDetailed extends StatelessWidget {
   }
 }
 
-final _sizes = <String>['7.5', '8', '9.5'];
-
 final _previes = <Sneakers>[
   Sneakers(
+    id: 1,
     image: AppAssets.images.sneakers1,
   ),
   Sneakers(
+    id: 2,
     image: AppAssets.images.sneakers2,
   ),
   Sneakers(
+    id: 3,
     image: AppAssets.images.sneakers3,
   ),
   Sneakers(
+    id: 4,
     image: AppAssets.images.sneakers4,
   ),
 ];
-
-class CustomShape extends CustomClipper<Path> {
-  @override
-  getClip(Size size) {
-    double height = size.height;
-    double width = size.width;
-    var path = Path();
-    path.lineTo(0, height - 220);
-    path.quadraticBezierTo(width / 2.9, height + 30, width, height - 70);
-    path.lineTo(width, 0);
-    path.close();
-
-    return path;
-  }
-
-  @override
-  bool shouldReclip(CustomClipper oldClipper) {
-    return true;
-  }
-}

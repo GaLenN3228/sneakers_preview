@@ -22,6 +22,9 @@
     "uk":"UK",
     "usa":"USA",
     "tryIt":"Try it",
-    "addToBag":"Add to bag"
+    "addToBag":"Add to bag",
+    "myBag":"My Bag",
+    "totalItems":"Total {count} items",
+    "cartEmpty":"Cart is empty"
 
 }
