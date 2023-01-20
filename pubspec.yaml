@@ -1,0 +1,53 @@
+name: sneakers_show
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  intl: ^0.17.0
+  flutter_bloc: ^8.1.1
+  auto_route: ^5.0.4
+  provider: ^6.0.5
+  collection: ^1.16.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  auto_route_generator: ^5.0.3
+  build_runner: ^2.3.3
+  flutter_gen: ^5.1.0+1
+  flutter_launcher_icons: ^0.11.0
+  flutter_lints: ^2.0.1
+
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/images/
+    - assets/svg/
+  fonts:
+    - family: Relish Pro
+      fonts:
+        - asset: assets/fonts/montserrat/Relish-Pro-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/montserrat/Relish-Pro-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/montserrat/Relish-Pro-Bold.ttf
+          weight: 700
+
+flutter_intl:
+  enabled: true
+  main_locale: "en"
+  arb-dir: lib/localization/
+  output_dir: lib/localization/generated
