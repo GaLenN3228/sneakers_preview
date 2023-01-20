@@ -19,6 +19,10 @@ extension AddToCard on CartBloc {
           count: existedItem.count! + 1,
         );
         emit(CartDataState(data: list));
+      } else {
+        final items = state.data.toList();
+        items.add(event.item);
+        emit(CartDataState(data: items));
       }
     }
   }

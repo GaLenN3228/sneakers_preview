@@ -26,4 +26,6 @@ class _Svg {
   final String search = 'assets/svg/search.svg';
   final String arrowRight = 'assets/svg/arrow_right.svg';
   final String leg = 'assets/svg/leg.svg';
+  final String minus = 'assets/svg/minus.svg';
+  final String plus = 'assets/svg/plus.svg';
 }
