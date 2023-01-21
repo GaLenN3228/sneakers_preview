@@ -22,6 +22,8 @@ class ScreenSneakersDetailed extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
+        padding: EdgeInsets.zero,
+        physics: const ClampingScrollPhysics(),
         children: [
           DetailedSneakers(
             sneakers: sneakers,
