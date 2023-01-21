@@ -5,10 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:sneakers_show/features/home/detailed/screen_sneakers_detailed.dart';
 import 'package:sneakers_show/features/home/widgets/tabs/nike_tab.dart';
 import 'package:sneakers_show/features/home/widgets/tabs/widgets/slider_card.dart';
-import 'package:sneakers_show/widgets/navigation/app_router.dart';
 import 'package:sneakers_show/widgets/navigation_transition.dart';
 import 'package:sneakers_show/widgets/tappable_edge.dart';
-import 'package:sneakers_show/widgets/theme/interfaces/app_theme.dart';
 
 class SneakersSlider extends StatefulWidget {
   const SneakersSlider({super.key});
